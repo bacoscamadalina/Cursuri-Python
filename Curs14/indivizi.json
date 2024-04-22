@@ -1,0 +1,55 @@
+{
+    "indivizi": [
+        {
+            "nume": "Ana Popescu",
+            "varsta": 28,
+            "ocupatie": "Inginer software",
+            "oras": "Cluj-Napoca"
+        },
+        {
+            "nume": "Bogdan Ionescu",
+            "varsta": 34,
+            "ocupatie": "Manager Proiect",
+            "oras": "Bucure\u0219ti"
+        },
+        {
+            "nume": "Cristina Enache",
+            "varsta": 25,
+            "ocupatie": "Designer Grafic",
+            "oras": "Ia\u0219i"
+        },
+        {
+            "nume": "Dorin Georgescu",
+            "varsta": 30,
+            "ocupatie": "Analist Financiar",
+            "oras": "Timi\u0219oara"
+        }
+    ]
+}{
+  "indivizi": [
+    {
+      "nume": "Ana Popescu",
+      "varsta": 28,
+      "ocupatie": "Inginer software",
+      "oras": "Cluj-Napoca"
+    },
+    {
+      "nume": "Bogdan Ionescu",
+      "varsta": 34,
+      "ocupatie": "Manager Proiect",
+      "oras": "Bucure\u0219ti"
+    },
+    {
+      "nume": "Cristina Enache",
+      "varsta": 25,
+      "ocupatie": "Designer Grafic",
+      "oras": "Ia\u0219i"
+    },
+    {
+      "nume": "Dorin Georgescu",
+      "varsta": 30,
+      "ocupatie": "Analist Financiar",
+      "oras": "Timi\u0219oara"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+/* multiline comment*/
+
+select * from Orders 
+where customer_id = 101;
+
+select * from Products;
+ 
+select name,price from Products;
+
+select count(*) from Products; /* numarul de randuri(entitati) introduse */
+
+select sum(stock_count) from Products;
+
+select category, sum(stock_count) from Products group by category order by sum(stock_count) asc; /* asc = ascendent, dsc = descendent)*/
+
+select o.product_id, o.quantity, p.name from Order_Items o join Products p on o.id  = p.id order by p.name asc;    /* order items va lua valoarea o*/
+
+select name as Nume_Produs , category as Categoria_Produsului from Products order by Categoria_Produsului;
+
+create table orders_test as select * from Orders; /* facem o copie si lucram pe copie, daca nu vrem sa lucram pe original*/
+
+
+
+
+CREATE TRIGGER SaveProductNewBeforeDelete
+BEFORE DELETE ON Test
+FOR EACH ROW
+BEGIN
+    INSERT INTO TestHistory (id, name, price, stock_count, deleted_at)
+    VALUES (OLD.id, OLD.name, OLD.price, OLD.stock_count, CURRENT_TIMESTAMP);
+END;
+/* Trigger = un decorator in programare
+In mom in care din tabel stergem o linie, pt fiecare radn pe care l-am sters aevm begin sau end. In begin se insereaza automat in 
+tabela testului, ii ia data la care s-a facut steergerea, preia toate denumirile si le adauga OLD
+Cu end se incheie actiunea de insert
+Asta se face automat cand stergem dintr-o tabela, nu trebuie sa apelam mereu
+Cand ai sters ceva, raman undeva datele, nu le pierdem
+*/
+

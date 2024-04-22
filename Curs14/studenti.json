@@ -1,0 +1,26 @@
+{
+    "studenti": [
+        {
+            "nume": "Ion Popescu",
+            "varsta": 22,
+            "cursuri": ["Matematică", "Fizică", "Informatică"],
+            "absolvent": false,
+            "contact": {
+                "email": "ion.popescu@example.com",
+                "telefon": "0712345678"
+            }
+        },
+        {
+            "nume": "Maria Ionescu",
+            "varsta": 21,
+            "cursuri": ["Literatură", "Istorie", "Arte"],
+            "absolvent": false,
+            "contact": {
+                "email": "maria.ionescu@example.com",
+                "telefon": "0723456789"
+            }
+        }
+    ]
+}
+
+
